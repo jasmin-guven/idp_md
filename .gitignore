@@ -1,3 +1,4 @@
 *.pdb
 *.gro
 *.trr
+.DS_Store
