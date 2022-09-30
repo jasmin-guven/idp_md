@@ -1,0 +1,44 @@
+                      :-) GROMACS - gmx mdrun, 2022.2 (-:
+
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /home/jguven/projects/idp_md/nvt
+Command line:
+  gmx mdrun -deffnm nvt -nb gpu
+
+Reading file nvt.tpr, VERSION 2022.2 (single precision)
+Changing nstlist from 10 to 100, rlist from 1 to 1.16
+
+On host azuma 4 GPUs selected for this run.
+Mapping of GPU IDs to the 4 GPU tasks in the 4 ranks on this node:
+  PP:0,PP:1,PP:2,PP:3
+PP tasks will do (non-perturbed) short-ranged and most bonded interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 4 MPI threads
+Using 5 OpenMP threads per tMPI thread
+
+
+NOTE: DLB will not turn on during the first phase of PME tuning
+starting mdrun 'Protein in water'
+50000 steps,    100.0 ps.
+
+NOTE: DLB can now turn on, when beneficial
+
+Writing final coordinates.
+
+
+Dynamic load balancing report:
+ DLB was off during the run due to low measured imbalance.
+ Average load imbalance: 0.7%.
+ The balanceable part of the MD step is 61%, load imbalance is computed from this.
+ Part of the total run time spent waiting due to load imbalance: 0.4%.
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:   290921.535    14546.086     2000.0
+                         4h02:26
+                 (ns/day)    (hour/ns)
+Performance:        0.594       40.405
+
+GROMACS reminds you: "We cannot wait for Nature's good graces - to take them from her is our goal" (Ivan Michurin)
+

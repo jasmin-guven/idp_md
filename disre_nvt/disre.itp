@@ -1,0 +1,7 @@
+
+; distance restraints for pivots of Protein in water
+
+[ distance_restraints ]
+;   i     j ? label      funct         lo        up1        up2     weight
+ 1504  2008 1     0          1        2.0        2.3        2.6          1
+ 3520  4024 1     0          1        2.0        2.3        2.6          1
