@@ -2,3 +2,4 @@
 *.gro
 *.trr
 .DS_Store
+*.xtc
