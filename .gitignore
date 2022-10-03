@@ -3,3 +3,6 @@
 *.trr
 .DS_Store
 *.xtc
+*.trr_offsets.*
+*.xtc_offsets.*
+\#*

@@ -24,6 +24,7 @@
 #include "topol_Protein_chain_A.itp"
 #include "topol_Protein_chain_A2.itp"
 
+
 ; Include water topology
 #include "./charmm36-jul2021.ff/tip3p.itp"
 
@@ -47,3 +48,4 @@ Protein_chain_A     1
 Protein_chain_A2     1
 SOL         207924
 SOD               18
+
