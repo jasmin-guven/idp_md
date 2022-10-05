@@ -6,8 +6,9 @@ Working dir:  /home/jguven/projects/idp_md/pulling
 Command line:
   gmx mdrun -deffnm pulling -nb gpu
 
-Reading file pulling.tpr, VERSION 2021.2 (single precision)
-Note: file tpx version 122, software tpx version 127
+
+Back Off! I just backed up pulling.log to ./#pulling.log.1#
+Reading file pulling.tpr, VERSION 2022.2 (single precision)
 Changing nstlist from 10 to 100, rlist from 1 to 1.16
 
 On host azuma 4 GPUs selected for this run.
@@ -19,6 +20,14 @@ Using 4 MPI threads
 Using 5 OpenMP threads per tMPI thread
 
 
+Back Off! I just backed up pulling_pullx.xvg to ./#pulling_pullx.xvg.1#
+
+Back Off! I just backed up pulling_pullf.xvg to ./#pulling_pullf.xvg.1#
+
+Back Off! I just backed up pulling.trr to ./#pulling.trr.1#
+
+Back Off! I just backed up pulling.edr to ./#pulling.edr.1#
+
 NOTE: DLB will not turn on during the first phase of PME tuning
 starting mdrun 'Protein in water'
 50000 steps,    100.0 ps.
@@ -27,19 +36,21 @@ NOTE: DLB can now turn on, when beneficial
 
 Writing final coordinates.
 
+Back Off! I just backed up pulling.gro to ./#pulling.gro.1#
+
 
 Dynamic load balancing report:
  DLB was off during the run due to low measured imbalance.
- Average load imbalance: 0.8%.
- The balanceable part of the MD step is 58%, load imbalance is computed from this.
+ Average load imbalance: 0.9%.
+ The balanceable part of the MD step is 57%, load imbalance is computed from this.
  Part of the total run time spent waiting due to load imbalance: 0.5%.
 
 
                Core t (s)   Wall t (s)        (%)
-       Time:   266091.654    13304.614     2000.0
-                         3h41:44
+       Time:   230927.841    11546.399     2000.0
+                         3h12:26
                  (ns/day)    (hour/ns)
-Performance:        0.649       36.957
+Performance:        0.748       32.073
 
-GROMACS reminds you: "I Smell Smoke From a Gun Named Extinction" (Pixies)
+GROMACS reminds you: "There's Nothing We Can't Fix, 'coz We Can Do It in the Mix" (Indeep)
 

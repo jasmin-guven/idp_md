@@ -38,23 +38,23 @@ pcoupl                  = no        ; no pressure coupling in NVT
 pbc                     = xyz       ; 3-D PBC
 ; Velocity generation
 gen_vel                 = no        ; assign velocities from Maxwell distribution
+
 ; Pull code
-pull 			= yes	    ; do pulling
+pull                    = yes       ; do pulling
 pull-ngroups            = 4         ; number of pull groups
-pull-group1-name        = G1        ; name of pull group 1 in the index file
-pull-group2-name        = A2	    ; name of pull group 2 in the index file
-pull-group3-name        = G2        ; name of pull group 3 in the index file
-pull-group4-name 	= A1	    ; name of pull group 4 in the index file
-pull-ncoords  		= 2	    ; number of pull coordinates
-pull-coord1-groups      = 1 2       ; group numbers for the pull coordinate group 1
-pull-coord2-groups 	= 3 4	    ; group numbers for the pull coordinate group 2
-pull-coord1-geometry    = distance  ; pull along the vector connecting the two groups
+pull-ncoords            = 2         ; number of pull coordinates
+
+pull-group1-name        = E1        ; name of pull group 1 in the index file
+pull-group2-name        = A1        ; name of pull group 2 in the index file
+pull-group3-name        = E2        ; name of pull group 3 in the index file
+pull-group4-name        = A2        ; name of pull group 4 in the index file
+
 pull-coord1-type        = flat-bottom ; at distances above pull-coord1-init a harmonic potential is applied
-pull-coord2-geometry    = distance  ; pull along the vector connecting the two groups
+pull-coord1-geometry    = distance  ; pull along the vector connecting the two groups
+pull-coord1-groups      = 1 2       ; group numbers for the pull coordinate group 1
+pull-coord1-init        = 2.5       ; nm, restraint the avg distance to 2.5
+
 pull-coord2-type        = flat-bottom ; at distances above pull-coord2-init a harmonic potential is applied
-pull-coord1-init	= 2.5	    ; nm, reference distance at t=0
-pull-coord2-init	= 2.5	    ; nm, reference distance at t=0
-pull-coord1-rate        = 0.01	    ; nm/ps, rate of change of the reference position
-pull-coord2-rate        = 0.01	    ; nm/ps, rate of change of the reference position
-
-
+pull-coord2-geometry    = distance  ; pull along the vector connecting the two groups
+pull-coord2-groups      = 3 4       ; group numbers for the pull coordinate group 2
+pull-coord2-init        = 2.5       ; nm, restraint the avg distance to 2.5
