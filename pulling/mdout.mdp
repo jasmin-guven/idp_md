@@ -2,7 +2,7 @@
 ;	File 'mdout.mdp' was generated
 ;	By user: jguven (1002)
 ;	On host: azuma
-;	At date: Tue Oct  4 13:48:56 2022
+;	At date: Wed Oct  5 17:36:39 2022
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2022.2 (-:
@@ -25,7 +25,7 @@ integrator               = md
 ; Start time and timestep in ps
 tinit                    = 0
 dt                       = 0.002
-nsteps                   = 50000
+nsteps                   = 250000
 ; For exact run continuation or redoing part of a run
 init-step                = 0
 ; Part index is updated automatically on checkpointing (keeps files separate)
@@ -169,7 +169,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen-seed                 = -579141901
+gen-seed                 = 1728048595
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
@@ -247,9 +247,9 @@ pull-coord1-origin       = 0.0 0.0 0.0
 pull-coord1-vec          = 0.0 0.0 0.0
 pull-coord1-start        = no
 pull-coord1-init         = 2.5
-pull-coord1-rate         = 0
-pull-coord1-k            = 0
-pull-coord1-kB           = 0
+pull-coord1-rate         = -0.01
+pull-coord1-k            = 1000
+pull-coord1-kB           = 1000
 pull-coord2-type         = flat-bottom
 pull-coord2-potential-provider = 
 pull-coord2-expression   = 
@@ -261,9 +261,9 @@ pull-coord2-origin       = 0.0 0.0 0.0
 pull-coord2-vec          = 0.0 0.0 0.0
 pull-coord2-start        = no
 pull-coord2-init         = 2.5
-pull-coord2-rate         = 0
-pull-coord2-k            = 0
-pull-coord2-kB           = 0
+pull-coord2-rate         = -0.01
+pull-coord2-k            = 1000
+pull-coord2-kB           = 1000
 
 ; AWH biasing          
 awh                      = no

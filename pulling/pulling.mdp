@@ -3,7 +3,7 @@ title                   = Pull code NVT equilibration
 define                  = -DPOSRES  ; position restrain the protein
 ; Run parameters
 integrator              = md        ; leap-frog integrator
-nsteps                  = 50000     ; 2 * 50000 = 100 ps
+nsteps                  = 250000    ; 2 * 250000 = 500 ps
 dt                      = 0.002     ; 2 fs
 ; Output control
 nstxout                 = 500       ; save coordinates every 1.0 ps
@@ -53,8 +53,13 @@ pull-coord1-type        = flat-bottom ; at distances above pull-coord1-init a ha
 pull-coord1-geometry    = distance  ; pull along the vector connecting the two groups
 pull-coord1-groups      = 1 2       ; group numbers for the pull coordinate group 1
 pull-coord1-init        = 2.5       ; nm, restraint the avg distance to 2.5
+pull-coord1-k		= 1000      ; kJ mol-1 nm-2, the force constant
+pull-coord1-rate	= -0.01	    ; nm ps-1, rate of change of the reference position
 
 pull-coord2-type        = flat-bottom ; at distances above pull-coord2-init a harmonic potential is applied
 pull-coord2-geometry    = distance  ; pull along the vector connecting the two groups
 pull-coord2-groups      = 3 4       ; group numbers for the pull coordinate group 2
 pull-coord2-init        = 2.5       ; nm, restraint the avg distance to 2.5
+pull-coord2-k		= 1000      ; kJ mol-1 nm-2, the force constant
+pull-coord2-rate	= -0.01	    ; nm ps-1, rate of change of the reference position
+
