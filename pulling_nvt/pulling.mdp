@@ -53,7 +53,7 @@ pull-coord1-type        = flat-bottom ; at distances above pull-coord1-init a ha
 pull-coord1-geometry    = distance  ; pull along the vector connecting the two groups
 pull-coord1-groups      = 1 4       ; group numbers for the pull coordinate group 1
 pull-coord1-init        = 0.25       ; nm, restraint the avg distance to 2.5
-pull-coord1-k		= 1000      ; kJ mol-1 nm-2, the force constant
+pull-coord1-k		= 25000      ; kJ mol-1 nm-2, the force constant
 pull-coord1-rate	= 0	    ; nm ps-1, rate of change of the reference position
 pull-coord1-start	= no	    ; add current distance to pull-coord1-init
 
@@ -61,9 +61,8 @@ pull-coord2-type        = flat-bottom ; at distances above pull-coord2-init a ha
 pull-coord2-geometry    = distance  ; pull along the vector connecting the two groups
 pull-coord2-groups      = 2 3       ; group numbers for the pull coordinate group 2
 pull-coord2-init        = 0.25       ; nm, restraint the avg distance to 2.5
-pull-coord2-k		= 1000      ; kJ mol-1 nm-2, the force constant
+pull-coord2-k		= 25000      ; kJ mol-1 nm-2, the force constant
 pull-coord2-rate	= 0	    ; nm ps-1, rate of change of the reference position
 pull-coord2-start	= no	    ; add current distance to pull-coord1-init
 
-pull-print-ref-value	= yes	    ; print the reference value for each pull coordinate
 

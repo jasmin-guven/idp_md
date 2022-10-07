@@ -7,7 +7,7 @@ Command line:
   gmx mdrun -deffnm pulling -nb gpu
 
 
-Back Off! I just backed up pulling.log to ./#pulling.log.6#
+Back Off! I just backed up pulling.log to ./#pulling.log.7#
 Reading file pulling.tpr, VERSION 2022.2 (single precision)
 Changing nstlist from 10 to 100, rlist from 1 to 1.16
 
@@ -20,16 +20,14 @@ Using 4 MPI threads
 Using 5 OpenMP threads per tMPI thread
 
 
-Back Off! I just backed up pulling_pullx.xvg to ./#pulling_pullx.xvg.6#
+Back Off! I just backed up pulling_pullx.xvg to ./#pulling_pullx.xvg.7#
 
-Back Off! I just backed up pulling_pullf.xvg to ./#pulling_pullf.xvg.6#
+Back Off! I just backed up pulling_pullf.xvg to ./#pulling_pullf.xvg.7#
 
-Back Off! I just backed up pulling.trr to ./#pulling.trr.6#
+Back Off! I just backed up pulling.trr to ./#pulling.trr.7#
 
-Back Off! I just backed up pulling.edr to ./#pulling.edr.6#
+Back Off! I just backed up pulling.edr to ./#pulling.edr.7#
 
 NOTE: DLB will not turn on during the first phase of PME tuning
 starting mdrun 'Protein in water'
 50000 steps,    100.0 ps.
-
-NOTE: DLB can now turn on, when beneficial
