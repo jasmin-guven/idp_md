@@ -1,8 +1,8 @@
 ;
 ;	File 'topol.top' was generated
 ;	By user: jasminguven (501)
-;	On host: owl.chem.ed.ac.uk
-;	At date: Wed Sep 28 11:04:27 2022
+;	On host: Jonnas-MacBook-Pro.local
+;	At date: Wed Jan  4 09:57:18 2023
 ;
 ;	This is a standalone topology file
 ;
@@ -11,9 +11,9 @@
 ;	
 ;	Executable:   /usr/local/gromacs/bin/gmx
 ;	Data prefix:  /usr/local/gromacs
-;	Working dir:  /Users/jasminguven/projects/idp_md
+;	Working dir:  /Users/jasminguven/projects/idp_md/topologies
 ;	Command line:
-;	  gmx pdb2gmx -f wt_combined.pdb -o wt.gro -water tip3p
+;	  gmx pdb2gmx -f ../coordinates/wt_combined.pdb -o ../coordinates/wt.gro -water tip3p
 ;	Force field was read from current directory or a relative path - path added.
 ;
 
@@ -23,7 +23,6 @@
 ; Include chain topologies
 #include "topol_Protein_chain_A.itp"
 #include "topol_Protein_chain_A2.itp"
-
 
 ; Include water topology
 #include "./charmm36-jul2021.ff/tip3p.itp"
@@ -46,6 +45,5 @@ Protein in water
 ; Compound        #mols
 Protein_chain_A     1
 Protein_chain_A2     1
-SOL         207924
+SOL         145928
 SOD               18
-

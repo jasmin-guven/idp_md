@@ -1,8 +1,8 @@
 ;
 ;	File 'topol_Protein_chain_A2.itp' was generated
 ;	By user: jasminguven (501)
-;	On host: owl.chem.ed.ac.uk
-;	At date: Wed Sep 28 11:04:27 2022
+;	On host: Jonnas-MacBook-Pro.local
+;	At date: Wed Jan  4 09:57:18 2023
 ;
 ;	This is a include topology file
 ;
@@ -11,9 +11,9 @@
 ;	
 ;	Executable:   /usr/local/gromacs/bin/gmx
 ;	Data prefix:  /usr/local/gromacs
-;	Working dir:  /Users/jasminguven/projects/idp_md
+;	Working dir:  /Users/jasminguven/projects/idp_md/topologies
 ;	Command line:
-;	  gmx pdb2gmx -f wt_combined.pdb -o wt.gro -water tip3p
+;	  gmx pdb2gmx -f ../coordinates/wt_combined.pdb -o ../coordinates/wt.gro -water tip3p
 ;	Force field was read from current directory or a relative path - path added.
 ;
 
